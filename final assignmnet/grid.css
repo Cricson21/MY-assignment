@@ -1,0 +1,10 @@
+.boundry {
+
+
+	display: grid;
+	grid-template-columns: 30% 70%;
+}
+.boundry > div {
+	background: #eee;
+	padding: 10 px;
+}
