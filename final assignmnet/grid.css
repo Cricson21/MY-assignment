@@ -7,11 +7,6 @@
 }
 
 
-
-.boundry > div {
-	background: #eee;
-	padding: 10 px;
-}
 		
 		.boundry > div:nth-child(odd) {
 	background: #ddd;
