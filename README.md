@@ -1,2 +1,0 @@
-# MY-assignment
-portfolio website
