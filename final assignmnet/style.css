@@ -70,11 +70,13 @@ body{
 /*styles for index end*/
 
 
+
+/*styles for portfolio*/
+
 .portfolio-contents{
 
-			background: red;
+			
 			height:618px ;
-			background: #ddd;
 			margin-top: 14px;
 			display: grid;
 			grid-template-columns: 15% 85%;
@@ -86,39 +88,37 @@ body{
 		}
 		.portfolio-contents-right{
 			display: grid;
-			grid-template-columns: 30% 70%;
+			grid-template-columns: 35% 65%;
 			
 		}
 
 		.paragraphs{
-			background: red;
+			background: #eee;
 			grid-auto-rows: 1/3;
 			padding: 10px;
+			color: black;
+
+		}
+		.paragraphs p {
+
+		font-size: 30px;
+	
 
 		}
 
 
 		
 		.r-con{
-			display: grid;
-			grid-template-rows:40% 60%;
-
-
-		}
-		.skills{
-			background: #eee;
-
-		}
-		.achievements{
 			background: whitesmoke;
+			
 		}
-
-
-
-/*styles for portfolio*/
-
-
-
+		.skills li{
+			font-size: 25px;
+		}
+		.skills h3{
+			font-size: 26px;
+		}
+		
 
 
 
@@ -129,33 +129,58 @@ body{
 
 /*styles for blog*/
 .blog-contents{
-
-			background: red;
 			height:618px ;
-			background: #ddd;
 			margin-top: 14px;
 			display: grid;
 			grid-template-columns: 1fr 1fr 1fr;
 
+
 		}
-		.blog-left{
+
+		.blog-intro{
+			background: #eee;
+			display: grid;
+			/*grid-auto-rows: minmax(229px,auto)*/
+			height: 229px;
+		}
+		.blog-intro p {
+			font-size: 30px;
+		}
+		 		
+		 .blog-left p{
 			background: white;
 			color: black;
+			font-size: 30px;
+			padding: 10px;
 		}
-		.blog-mid{
+		.blog-mid {
 			background: #eee;
+			font-size:30px ;
 		}
-		.blog-right{
+
+
+
+		.blog-mid p{
+			 
+			font-size:30px ;
+		}
+		.blog-right p{
 			background: white;
+			padding: 10px;
+			font-size:30px ;
 		}
-		.blog-intro{
+		.blog-intro p{
 			background: skyblue;
 			margin-top: 5px;
 			margin-bottom: 5px;
-			height: 150px;
+			height: 80px;
+			background: #eee;
+			font-size:30px ;
+         padding: 10px;
 		}
 		.heading{
 			text-align: center;
+			font-size: 40px;
 		}
 
 
@@ -191,20 +216,21 @@ body{
 
 /*styles for contact*/
 
-	body h1{
-	text-align: centre;
-	text-decoration-style: solid;
+.contacts {
+	background: #eee;
 }
 
-.Division{
 
-	background: gray;
-	width: 40%;
-	text-decoration-color: blue;
-	float: left;
-	padding: 2%;
+
+.Division p {
+	text-align: center;
 }
-
+ .con-me{
+ 	font-size: 50px;
+ }
+ .Division{
+ 	background: #ddd;
+ }
 
 
 
@@ -214,3 +240,45 @@ body{
 
 /*styles for contact end*/
 
+
+
+
+
+
+
+@media only screen and (max-width: 700px){
+	.boundry{
+		    margin-top: 14px;
+    display: block;
+	}
+	.left-pic{
+		display: none;
+	}
+	.portfolio-contents{
+		    margin-top: 14px;
+    display: block;
+	}
+	.blog-contents{
+
+			height:618px ;
+			margin-top: 14px;
+			display: grid;
+			grid-template-rows: 1fr 1fr 1fr;
+			display: block;
+
+
+		}
+
+	.r-con{
+		display: grid;
+    grid-template-rows: unset;
+
+
+
+	}
+
+
+
+
+
+}
