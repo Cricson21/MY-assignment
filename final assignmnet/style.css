@@ -1,4 +1,29 @@
 
+body{
+	margin: 0px;
+
+}
+
+
+
+
+/*index*/
+
+.navigation a:hover {
+  background-color: #eee;
+  color: black;
+}
+
+.navigation a.open {
+  background-color: gray;
+  color: white;
+} 
+
+
+
+
+
+
 .top{
 			background:black;
 			height: 210px;
@@ -52,6 +77,12 @@ li a {
 	padding: 3%;
 	background: #eee;
 }
+.left-content p{
+	font-size: 30px;
+}
+.left-content ol li{
+	font-size: 30px;
+}
 .hello{
 	text-align: center;
 }
@@ -61,13 +92,72 @@ li a {
 	padding-top: 75px;
 
 }
-
-
-
-.navbar{
-
-	justify-content: space-between;
+.right-content p{
+	font-size: 30px;
 }
+
+
+
+
+/*blogstart*/
+.blog-contents{
+			height:618px ;
+			margin-top: 14px;
+			display: grid;
+			grid-template-columns: 1fr 1fr 1fr;
+
+
+		}
+
+		.blog-intro{
+			background: #eee;
+			display: grid;
+			height: 229px;
+		}
+		.blog-intro p {
+			font-size:30px ;
+		}
+		 		
+		 .blog-left p{
+			background: white;
+			color: black;
+			font-size:30px ;
+			padding: 10px;
+		}
+		.blog-mid {
+			background: #eee;
+			font-size:30px ;
+		}
+
+
+
+		.blog-mid p{
+			 
+			font-size:25px ;
+		}
+		.blog-right p{
+			background: white;
+			padding: 10px;
+			font-size:25px ;
+		}
+		.blog-intro p{
+			margin-top: 5px;
+			margin-bottom: 5px;
+			height: 80px;
+			background: #eee;
+			font-size:25px;
+         padding: 10px;
+		}
+		.heading{
+			text-align: center;
+			font-size:30px ;
+		}
+
+
+
+
+
+/*blogend*/
 
 
 
@@ -128,66 +218,6 @@ li a {
 /*portfolioend*/
 
 
-/*blogend*/
-.blog-contents{
-			height:618px ;
-			margin-top: 14px;
-			display: grid;
-			grid-template-columns: 1fr 1fr 1fr;
-
-
-		}
-
-		.blog-intro{
-			background: #eee;
-			display: grid;
-			height: 229px;
-		}
-		.blog-intro p {
-			font-size: 30px;
-		}
-		 		
-		 .blog-left p{
-			background: white;
-			color: black;
-			font-size: 30px;
-			padding: 10px;
-		}
-		.blog-mid {
-			background: #eee;
-			font-size:30px ;
-		}
-
-
-
-		.blog-mid p{
-			 
-			font-size:30px ;
-		}
-		.blog-right p{
-			background: white;
-			padding: 10px;
-			font-size:30px ;
-		}
-		.blog-intro p{
-			background: skyblue;
-			margin-top: 5px;
-			margin-bottom: 5px;
-			height: 80px;
-			background: #eee;
-			font-size:30px ;
-         padding: 10px;
-		}
-		.heading{
-			text-align: center;
-			font-size: 40px;
-		}
-
-
-
-
-
-/*blogend*/
 
 
 
@@ -196,20 +226,30 @@ li a {
 
 .report-contents{
 			background: #eee;
-			/*height: 785px;*/
-			grid-auto-rows: minmax(auto,auto);
+			display: block;
+			margin-right: 2px;
 		}
-.uon-id{
+#uon-id p{
+
+			font-weight: bold;
+			text-align: centre;
+
+}
 
 
+.mds p{
+	font-size: 20px;
+}
+.mds li{
+			font-size: 20px;
 }
 
 
 
 
-
-
 /*reportend*/
+
+
 
 
 
@@ -234,47 +274,27 @@ li a {
 
 
 
-
-
-
-
 /*contactend*/
-
-
-
-
-
-
-
-
-.img h2 {
-	color: darkred;
-
-}
-
-
-
-
 
 @media only screen and (max-width: 700px){
 	.boundry{
-		    margin-top: 14px;
+		margin-top: 14px;
     display: block;
 	}
 	.left-pic{
 		display: none;
 	}
 	.portfolio-contents{
-		    margin-top: 14px;
+	  margin-top: 14px;
     display: block;
 	}
 	.blog-contents{
 
-			height:618px ;
-			margin-top: 14px;
-			display: grid;
-			grid-template-rows: 1fr 1fr 1fr;
-			display: block;
+		height:618px ;
+		margin-top: 14px;
+		display: grid;
+		grid-template-rows: 1fr 1fr 1fr;
+		display: block;
 
 
 		}
@@ -283,8 +303,5 @@ li a {
 		display: grid;
     grid-template-rows: unset;
 
-
-
 	}
 
-}
